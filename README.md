@@ -4,10 +4,12 @@ Done because HA team decided not to update the official Gree integration to work
 <br>
 Please add your HA version if it work for you at Discussion section if you want to help others.<br><br>
 For me it work on this version from 2025 because I'm not brave enough to update my running HA and start fixing new problems:<br>
-Core  2025.3.1<br>
-Supervisor 2025.03.2<br>
-Operating System 14.2<br>
-Frontend 20250306.0<br>
+| Name | Version |
+| -------- | ------- |
+| Core | 2025.3.1 |
+| Supervisor | 2025.03.2 |
+| Operating System | 14.2 |
+| Frontend | 20250306.0 |
 
 # HACS installation:<br>
 search on HACS integration for Gree climate integration that work from another LAN segment / you can specify AC IP address or add manual the repository:<br>
