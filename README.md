@@ -2,6 +2,8 @@
 # HA Gree climate as custom integration that work from another LAN segment, you can specify AC IP address.
 Done because HA team decided not to update the official Gree integration to work from any LAN segment.<br>
 <br>
+If you are an advanced user, have a look at Fake-Gree-server: https://github.com/rapi3/Fake-Gree-server<br>
+<br>
 Please add your HA version if it work for you at Discussion section if you want to help others.<br><br>
 For me it work on this version from 2025 because I'm not brave enough to update my running HA and start fixing new problems:<br>
 | Name | Version |
