@@ -8,9 +8,9 @@ Please add your HA version if it work for you at Discussion section if you want 
 For me it work on this version from 2025 because I'm not brave enough to update my running HA and start fixing new problems:<br>
 | Name | Version |
 | -------- | ------- |
-| Core | 2025.3.2 |
-| Supervisor | 2025.03.2 |
-| Operating System | 14.2 |
+| Core | 2025.3.3 |
+| Supervisor | 2025.03.3 |
+| Operating System | 15 |
 | Frontend | 20250306.0 |
 
 # HACS installation:<br>
