@@ -8,10 +8,10 @@ Please add your HA version if it work for you at Discussion section if you want 
 For me it work on this version from 2025 because I'm not brave enough to update my running HA and start fixing new problems:<br>
 | Name | Version |
 | -------- | ------- |
-| Core | 2025.4.0 |
-| Supervisor | 2025.03.4 |
+| Core | 2025.4.1 |
+| Supervisor | 2025.04.0 |
 | Operating System | 15.1 |
-| Frontend | 20250401.0 |
+| Frontend | 20250404.0 |
 
 # HACS installation:<br>
 search on HACS integration for Gree climate integration that work from another LAN segment / you can specify AC IP address or add manual the repository:<br>
