@@ -1,4 +1,5 @@
 # HA-OS Gree Climate
+# HA Gree climate as custom integration that adds Horizontal Swing support
 # HA Gree climate as custom integration that work from another LAN segment, you can specify AC IP address.
 Done because HA team decided not to update the official Gree integration to work from any LAN segment.<br>
 <br>
