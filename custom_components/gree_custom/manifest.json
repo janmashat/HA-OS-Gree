@@ -1,0 +1,13 @@
+{
+  "domain": "gree_custom",
+  "name": "Gree Climate",
+  "version": "2.0.0",
+  "documentation": "https://github.com/janmashat/HA-OS-Gree/",
+  "issue_tracker": "https://github.com/janmashat/HA-OS-Gree/issues",
+  "config_flow": true,
+  "iot_class": "local_polling",
+  "codeowners": ["@janmashat"],
+  "requirements": ["greeclimate==1.4.1"],
+  "dependencies": ["network"],
+  "loggers": ["greeclimate"]
+}

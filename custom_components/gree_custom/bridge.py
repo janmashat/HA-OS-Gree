@@ -1,4 +1,4 @@
-"""Helper and wrapper classes for Gree module."""
+"""Helper and wrapper classes for gree_custom module."""
 from __future__ import annotations
 
 from datetime import timedelta
@@ -47,7 +47,7 @@ class DeviceDataUpdateCoordinator(DataUpdateCoordinator):  # pylint: disable=has
         except DeviceTimeoutError as error:
             self._error_count += 1
 
-            # Under normal conditions GREE units timeout every once in a while
+            # Under normal conditions gree units timeout every once in a while
             if self.last_update_success and self._error_count >= MAX_ERRORS:
                 _LOGGER.warning(
                     "Device is unavailable: %s (%s)",

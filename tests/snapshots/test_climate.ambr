@@ -110,7 +110,7 @@
       'original_device_class': None,
       'original_icon': None,
       'original_name': None,
-      'platform': 'gree',
+      'platform': 'gree_custom',
       'previous_unique_id': None,
       'supported_features': <ClimateEntityFeature: 441>,
       'translation_key': None,
