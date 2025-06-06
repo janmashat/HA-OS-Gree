@@ -1,11 +1,12 @@
 {
   "domain": "gree",
   "name": "Gree Climate",
-  "version": "1.0.0",
-  "codeowners": ["@rapi3"],
+  "version": "2.0.0",
+  "codeowners": ["@janmashat"],
+  "documentation": "https://github.com/janmashat/HA-OS-Gree/",
+  "issue_tracker": "https://github.com/janmashat/HA-OS-Gree/issues",
   "config_flow": true,
   "dependencies": ["network"],
-  "documentation": "https://www.home-assistant.io/integrations/gree",
   "iot_class": "local_polling",
   "loggers": ["greeclimate"],
   "requirements": ["greeclimate==1.4.1"]
