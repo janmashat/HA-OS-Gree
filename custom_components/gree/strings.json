@@ -1,43 +1,79 @@
 {
   "config": {
     "step": {
-      "confirm": {
-        "description": "[%key:common::config_flow::description::confirm_setup%]"
-      },
       "user": {
-        "title": "[%key:common::action::connect%]",
-        "description": "Enter the IP address of the network to scan, or leave blank to scan the HomeAssistant network.",
+        "title": "Add Gree Device",
+        "description": "Please enter the IP address of your Gree device. We will try to discover its details automatically.",
         "data": {
-          "ip": "[%key:common::config_flow::data::ip%]"
+          "host": "IP Address"
+        }
+      },
+      "link": {
+        "title": "Confirm Device",
+        "description": "A device was found at {host}. Please provide a name for this device in Home Assistant. The discovered name is provided as a default.",
+        "data": {
+          "name": "Name"
+        }
+      },
+      "manual": {
+        "title": "Manual Gree Device Setup",
+        "description": "We could not automatically discover the MAC address for the IP provided. Please confirm the IP and enter the MAC address manually.",
+        "data": {
+          "name": "Device Name (e.g., Living Room AC)",
+          "host": "IP Address",
+          "port": "Port (usually 7000)",
+          "mac": "MAC Address (e.g., A0:B1:C2:D3:E4:F5)"
         }
       }
     },
     "error": {
-      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
-      "unknown": "[%key:common::config_flow::error::unknown%]"
+      "cannot_connect": "Failed to connect. Check IP/Port and network connectivity.",
+      "device_not_bound": "Device not bound. This may indicate an issue with the encryption key. Try re-adding to the official Gree app first if problems persist.",
+      "cannot_query_device": "Connected to the device, but failed to query its properties. It might be in an unexpected state.",
+      "library_not_loaded": "Required greeclimate library components failed to load. Check Home Assistant logs.",
+      "unknown": "An unknown error occurred during setup. Check Home Assistant logs.",
+      "invalid_ip": "Invalid IP address format.",
+      "discovery_error": "An error occurred during MAC address discovery. Please use manual entry."
     },
     "abort": {
-      "single_instance_allowed": "[%key:common::config_flow::abort::single_instance_allowed%]",
-      "no_devices_found": "[%key:common::config_flow::abort::no_devices_found%]"
+      "already_configured": "This Gree device (MAC: {mac_address}) is already configured.",
+      "no_devices_found_or_already_configured": "No new Gree devices were found on your network, or all found devices are already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Gree Device Options",
+        "description": "Adjust polling interval for {device_name}.",
+        "data": {
+          "update_interval": "Polling interval (seconds)"
+        }
+      }
     }
   },
   "entity": {
+    "select": {
+      "horizontal_swing": {
+        "name": "Horizontal Swing",
+        "state": {
+          "off": "Off",
+          "full_swing": "Full Swing",
+          "far_left": "Far Left",
+          "left": "Left",
+          "center": "Center",
+          "right": "Right",
+          "far_right": "Far Right"
+        }
+      }
+    },
     "switch": {
       "light": {
-        "name": "Panel light"
+        "name": "Panel Light"
       },
       "quiet": {
-        "name": "Quiet"
-      },
-      "fresh_air": {
-        "name": "Fresh air"
-      },
-      "xfan": {
-        "name": "XFan"
-      },
-      "health_mode": {
-        "name": "Health mode"
+        "name": "Quiet Mode"
       }
     }
   }
 }
+
